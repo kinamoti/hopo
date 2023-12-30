@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+
+        <meta charset="utf-8">
+        <title>hopo-みんなの声を届けるアプリ-</title>
+        <!--CSS-->
+        <link rel="stylesheet" href="home.css">
+        
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+            <header>
+                hopo
+            </header> 
+            
+            <div class="container">
+
+                <div class="side">
+
+                    <a href="home.html">
+                        教室
+                    </a>
+                    <br>
+                
+                    <a href="意見を書く.html">
+                        意見を書く
+                    </a>
+                    <br>
+                    <a href="みんなの声.html">
+                        みんなの声
+                    </a>
+        
+                </div>
+
+                <div class="main">
+
+                  <p class="lead-form">ご意見投稿フォーム</p> 
+                    
+                   <form method="post" id="opinionForm">
+
+                          <div class="item">
+                            <label class="label">お名前</label>
+                            <input class="inputs" type="text" required id="name">
+                          </div>
+                          
+                          <div class="item">
+                            <label class="label">ご意見</label>
+                            <textarea class="inputs" required id="opinionInput"></textarea>
+                          </div>
+
+                          <div class="item">
+                            <label class="label">詳しい説明・理由</label>
+                            <textarea class="inputs" required id="reazonInput"></textarea>
+                          </div>
+                        
+                          <div class="btn-area">
+                            <input type="submit" value="投稿" id="post"><input type="reset" value="リセット" id="reset">
+                          </div>
+
+                    </form>
+
+                    <a href="みんなの声.html">みんなの意見へ</a>
+                
+                </div>
+
+            </div>
+
+            <footer>
+                目次　hopoについて
+            </footer>
+        </div>
+        <script src="意見を書く.js"></script>
+       
+    </body>
+</html>
