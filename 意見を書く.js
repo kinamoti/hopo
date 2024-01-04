@@ -67,11 +67,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
       button.disabled = false;
     }
-
+    
     return opinionDiv;
   }
 
   loadOpinions();
 });
 
+// 意見を書く.js
 
+document.addEventListener('DOMContentLoaded', function() {
+  const opinionForm = document.getElementById('opinionForm');
+
+  opinionForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // デフォルトの送信を停止
+
+    // フォームが送信された後の処理をここに記述
+
+    window.location.href = '完了.html'; // 完了画面に遷移
+  });
+
+  // 他の処理...
+});
