@@ -71,9 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return opinionDiv;
   }
 
-  loadOpinions();
-});
-
 // 意見を書く.js
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -88,4 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // 他の処理...
+});
+
+  loadOpinions();
 });
