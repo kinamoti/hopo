@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+.resizeimage{
+    width:100%
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  height: 100px;
+  padding: 0 20px; /* 適宜調整 */
+}
+
+.logo {
+  width: 100px; /* ロゴの写真の幅を調整してください */
+  height: auto; /* 高さを自動調整 */
+  margin-right: 10px; /* ロゴの写真とヘッダーの間隔を設定 */
+}
+
+
+header {
+  background: #fff;
+  background-position: center;
+  text-align: center;
+  vertical-align: auto;
+  font-size: 60px;
+  font-weight: bold;
+  color: #7cb862;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 1rem 1rem;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+} 
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.side {
+  text-align: center;
+  box-sizing: border-box; /* paddingも含めた全体のサイズにする */
+  padding: 0 30px;
+  line-height: 50px;
+}
+
+
+.main {
+    width: 73%;
+    height: max-content;
+  }
+  .midasi{
+    font-weight: bold;
+    color:#ffffff;
+    font-size: 25px;
+    text-align: center;
+  }
+  .midasi2{
+    font-weight: bold;
+    color:#ffffff;
+    font-size: 25px;
+    margin: auto;
+  }
+
+
+  form{
+    width:460px;
+    margin:0 auto;
+  }
+  .item{
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .label{
+    float: left;
+    margin-right: 20px;
+    width:135px;
+    border-left: solid 3px #d8757d;
+    padding-left: 10px;
+    font-size: 17px;
+  }
+  .inputs{
+    float: left;
+    width:250px;
+  }
+  input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding:10px;
+    font-size: 15px;
+  }
+  textarea{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+  }
+  .btn-area{
+    text-align: center;
+  }
+  input[type="submit"]{
+    background: #d8757d;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+
+.keiziban {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opinion {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    color:#333;
+}
+
+
+
+/* レスポンシブレイアウトのための調整 */
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+  .main,
+  .side {
+      width: 100%;
+  }
+
+    .opinion {
+        flex: 1 1 calc(100% - 20px);
+  }
+}
+
+/* ナビゲーションのためのCSS */
+nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 130px;
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px #ddd;
+  padding: 80px;
+  text-align: center; /* テキストを中央に配置 */
+  font-size: 18px;
+  margin: auto;
+}
+
+nav::before,
+nav::after {
+  content: "";
+  position: absolute;
+  width: 25px; /* 直径 */
+  height: 25px; /* 直径 */
+  background-color: #ff9999; /* 赤色 */
+  box-shadow: 0 0 3px #000000;
+  border-radius: 50%; /* 円形 */
+}
+
+nav::before {
+  top: 10px;
+  left: 10px;
+}
+
+nav::after {
+  top: 10px;
+  right: 10px;
+}
+
+
+a{
+  color: #5d5d5d;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover{
+  color: #8a8a8a;
+}
+
+/* 1200px以下の表示 */
+@media screen and (max-width: 1300px) {
+  .main {
+      width: 100%;
+  }
+
+  .side {
+      width: 100%;
+      padding: 20px;
+  }
+
+  nav {
+      position: relative;
+      top: -30px;
+      padding: 20px;
+      text-align: center; /* テキストを中央に配置 */
+      line-height: 45px;
+  }
+}
+
+
+
+/* 黒板風 */
+.kokuban-t2 {
+  position: relative;
+  margin: 2em auto;
+  padding: 3.2em 1em 1em;
+  width: 90%; /* ボックス幅 */
+  height: max-content;
+  background-color: #7cb862; /* ボックス背景色 */
+  color: #fff; /* 文章色 */
+  border: 8px solid #cdb14d; /* 枠線 */
+  border-radius: 3px; /* 角の丸み */
+  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+ .kokuban-t2::before,
+ .kokuban-t2::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+ } 
+ .kokuban-t2::before {
+  right: 10px;
+  border: solid 5px #fff; /*チョーク（白）*/
+  width: 30px; 
+  border-radius: 3px 2px 0 2px;
+ }
+ .kokuban-t2::after {
+  right: 60px;
+  border: solid 5px #ffff6b; /*チョーク（黄色）*/
+  width: 25px; 
+  border-radius: 8px 5px 2px 5px;
+ }
+
+
+/* ルーズリーフ風 */
+.loose-leaf{
+  position: relative;
+  padding: 0.5rem;
+  background-color: #eae9c5;
+  box-shadow: 0 0 0 0.5rem #eae9c5;
+  border-left: 10px dotted white;
+}
+
+.loose-leaf::before {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  background-image: repeating-linear-gradient(#bcbcbc 0 1px, transparent 1px 35px);
+  content: '';
+}
+
+.loose-leaf p{
+  color: #333;
+  line-height: 2.3;
+}
+
+.loose-leaf c {
+  color: #8c8a8a;
+}
+
+/* いいねボタン */
+.like-button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0px 10px;
+  margin-top: 1px; /* ボタン間の間隔を追加 */
+  cursor: pointer;
+  transition: background-color 0.3s; /* ホバー時の色の変化を追加 */
+  width: auto;
+  height: 30px;
+  position: relative;
+}
+
+.like-button:hover {
+  background-color: transparent; /* ホバー時も透明に設定 */
+  filter: brightness(80%); /* ホバー時の明るさを変更 */
+}
+
+/* いいね数 */
+.like-count {
+  font-weight: bold;
+  color: #d36770;
+  font-size: 18px;
+  padding: 1px 10px;
+  position: absolute;
+  margin-top: 1px;
+}
